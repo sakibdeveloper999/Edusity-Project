@@ -5,6 +5,7 @@ import mail_icon from "../../assets/mail-icon.png";
 import phone_icon from "../../assets/phone-icon.png";
 import location_icon from "../../assets/location-icon.png";
 import white_arrow from "../../assets/white-arrow.png";
+import.meta.env;
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -53,14 +54,13 @@ const Contact = () => {
         </p>
         <ul>
           <li>
-            <img src={mail_icon} alt="mail icon" /> contact@sakibdeveloper.com
+            <img src={mail_icon} alt="mail icon" /> {import.meta.env.VITE_CONTACT_EMAIL}
           </li>
           <li>
-            <img src={phone_icon} alt="phone icon" /> 01834322352
+            <img src={phone_icon} alt="phone icon" /> {import.meta.env.VITE_CONTACT_PHONE}
           </li>
           <li>
-            <img src={location_icon} alt="location icon" /> Dhaka, Tajgaon,
-            Bangladesh
+            <img src={location_icon} alt="location icon" /> {import.meta.env.VITE_CONTACT_LOCATION}
           </li>
         </ul>
       </div>

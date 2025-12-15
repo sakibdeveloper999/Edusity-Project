@@ -8,6 +8,10 @@ pnpm-debug.log*
 lerna-debug.log*
 # Runtime data
 .*/.cache
+.env
+.env.local  
+.env.*.local
+
 env
 .next
 .nuxt
